@@ -40,10 +40,10 @@ function App() {
 
 
           <Box width={"100%"} bg={"#EEEDEB"} borderRadius={"md"}>
-            {audioUrl.map((audio, index) => <AudioPlayer audioUrl={audioUrl[index]} turn={turn} setTurn={setTurn} playing={playing} setPlaying={setPlaying} index={index} key={index} />)}
+            {audioUrl.map((_audio, index) => <AudioPlayer audioUrl={audioUrl[index]} turn={turn} setTurn={setTurn} playing={playing} setPlaying={setPlaying} index={index} key={index} />)}
 
           </Box>
-          <Box w="25%" display={"flex"} justifyContent={"space-between"}>
+          <Box w="12%" display={"flex"} justifyContent={"space-between"}>
             <Button colorScheme='blue' onClick={() => { turn < 0 ? setTurn(0) : setPlaying(!playing); }}>{playing ? "Pause" : "Play"}</Button>
             <Button colorScheme='red' onClick={() => setTurn(-20)}>Restart</Button>
           </Box>

@@ -2,10 +2,8 @@ import React, { useState, useEffect } from 'react';
 import {
     RangeSlider,
     RangeSliderTrack,
-    RangeSliderFilledTrack,
-    RangeSliderThumb, RangeSliderMark, Box, Badge
+    RangeSliderThumb, RangeSliderMark, Box,
 } from '@chakra-ui/react';
-import { FaPlayCircle, FaPauseCircle } from 'react-icons/fa';
 
 
 const SliderApp = ({ dur, count, setCount, finValues, setFinValues }) => {

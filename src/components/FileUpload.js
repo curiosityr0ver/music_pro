@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Dropzone from 'react-dropzone';
-import {
-    RangeSlider,
-    RangeSliderTrack,
-    RangeSliderFilledTrack,
-    RangeSliderThumb, RangeSliderMark, Box, Badge, Text, Flex
-} from '@chakra-ui/react';
+import { Box, Text, Flex } from '@chakra-ui/react';
 import { SmallCloseIcon } from '@chakra-ui/icons';
 const FileUpload = ({ onFileUpload, handleFileDelete, count, setCount }) => {
     const [selectedFile, setSelectedFile] = useState([]);

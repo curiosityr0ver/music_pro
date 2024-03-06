@@ -1,9 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect, useRef } from 'react';
 import WaveSurfer from 'wavesurfer.js';
-import {
-    Button, Box
-} from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 
 const colors = [
     {
@@ -94,24 +91,5 @@ const Waveform = ({ audioUrl, turn, setTurn, playing, setPlaying, index }) => {
         </div>
     );
 };
-
-Waveform.propTypes = {
-    audio: PropTypes.string.isRequired,
-};
-
-// const WaveSurferWrap = styled.div`
-//   display: grid;
-//   grid-template-columns: 40px 1fr;
-//   align-items: center;
-
-//   button {
-//     width: 40px;
-//     height: 40px;
-//     border: none;
-//     padding: 0;
-//     background-color: white;
-//   }
-// `;
-
 
 export default Waveform;
